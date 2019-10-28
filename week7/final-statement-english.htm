@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- saved from url=(0070)file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html -->
 <html class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>final-statement</title>
+<title>final statement</title>
 
 <script src="./final-statement-english_files/require.min.js"></script>
 <script src="./final-statement-english_files/jquery.min.js"></script>
@@ -319,25 +319,25 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Чтение-информации-о-матчах">Чтение информации о матчах<a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%A7%D1%82%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%B8-%D0%BE-%D0%BC%D0%B0%D1%82%D1%87%D0%B0%D1%85">¶</a></h4><p>Информация о матчах записана в сжатом текстовом файле <code>matches.jsonlines.bz2</code>, каждая строчка которого содержит объект в формате <a href="https://ru.wikipedia.org/wiki/JSON">JSON</a>. Запись в формате JSON преобразуется в python-объект при помощи стандартного модуля <code>json</code>. Пример чтения матчей:</p>
+<h4 id="Чтение-информации-о-матчах"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Reading match info </font></font><a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%A7%D1%82%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%86%D0%B8%D0%B8-%D0%BE-%D0%BC%D0%B0%D1%82%D1%87%D0%B0%D1%85"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¶</font></font></a></h4><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Information about matches is recorded in a compressed text file </font></font><code>matches.jsonlines.bz2</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, each line of which contains an object in </font></font><a href="https://ru.wikipedia.org/wiki/JSON"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">JSON format</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> . </font><font style="vertical-align: inherit;">A JSON record is converted to a python object using a standard module </font></font><code>json</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">Match reading example:</font></font></p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">In [5]:</font></font></div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">json</span>
-<span class="kn">import</span> <span class="nn">bz2</span><font></font>
+<div class=" highlight hl-ipython2"><pre><span class="kn"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">import </font></font></span> <span class="nn"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">json </font></font></span>
+<span class="kn"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">import </font></font></span> <span class="nn"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">bz2</font></font></span><font></font>
 <font></font>
-<span class="k">with</span> <span class="n">bz2</span><span class="o">.</span><span class="n">BZ2File</span><span class="p">(</span><span class="s1">'./matches.jsonlines.bz2'</span><span class="p">)</span> <span class="k">as</span> <span class="n">matches_file</span><span class="p">:</span>
-    <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">matches_file</span><span class="p">:</span>
-        <span class="n">match</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">line</span><span class="p">)</span><font></font>
+<span class="k"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">with </font></font></span> <span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">bz2 </font></font></span><span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font></font></span><span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">BZ2File </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">( </font></font></span><span class="s1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">'./matches.jsonlines.bz2' </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">) </font></font></span> <span class="k"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">as </font></font></span> <span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">matches_file </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span>
+    <span class="k"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">for </font></font></span> <span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">line </font></font></span> <span class="ow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">in </font></font></span> <span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">matches_file </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span>
+        <span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">match </font></font></span> <span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">= </font></font></span> <span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">json </font></font></span><span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font></font></span><span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">loads </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">( </font></font></span><span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">line </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">)</font></font></span><font></font>
         <font></font>
-        <span class="c1"># Обработка матча</span>
-        <span class="k">break</span>
+        <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># Match processing </font></font></span>
+        <span class="k"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">break</font></font></span>
 </pre></div>
 
 </div>
@@ -350,123 +350,123 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Описание-полей-в-записи-матча">Описание полей в записи матча<a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%BE%D0%BB%D0%B5%D0%B9-%D0%B2-%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B8-%D0%BC%D0%B0%D1%82%D1%87%D0%B0">¶</a></h4><div class="highlight"><pre><span class="p">{</span>
-    <span class="s2">"match_id"</span><span class="p">:</span> <span class="mi">247</span><span class="p">,</span>            <span class="c1"># идентификатор матча</span>
-    <span class="s2">"start_time"</span><span class="p">:</span> <span class="mi">1430514316</span><span class="p">,</span>   <span class="c1"># дата/время начала матча, unixtime</span>
-    <span class="s2">"lobby_type"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>            <span class="c1"># тип комнаты, в которой собираются игроки </span>
-                                <span class="c1">#   (расшифровка в dictionaries/lobbies.csv)</span><font></font>
+<h4 id="Описание-полей-в-записи-матча"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Description of fields in the match record </font></font><a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%BE%D0%BB%D0%B5%D0%B9-%D0%B2-%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B8-%D0%BC%D0%B0%D1%82%D1%87%D0%B0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¶</font></font></a></h4><div class="highlight"><pre><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{ </font></font></span>
+    <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"match_id" </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">247 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span>            <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># match identifier </font></font></span>
+    <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"start_time" </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1430514316 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span>   <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># date / time of the start of the match, unixtime </font></font></span>
+    <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"lobby_type" </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span>            <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># type of room in which the players gather </font></font></span>
+                                <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># (transcript in dictionaries / lobbies.csv)</font></font></span><font></font>
 <font></font>
-    <span class="c1"># стадия выбора героев</span>
-    <span class="s2">"picks_bans"</span><span class="p">:</span> <span class="p">[</span>
-        <span class="p">{</span>
-            <span class="s2">"order"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>       <span class="c1"># порядковый номер действия</span>
-            <span class="s2">"is_pick"</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span> <span class="c1"># true если команда выбирает героя, false — если банит</span>
-            <span class="s2">"team"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>        <span class="c1"># команда, совершающая действие (0 — Radiant, 1 — Dire)</span>
-            <span class="s2">"hero_id"</span><span class="p">:</span> <span class="mi">95</span>     <span class="c1"># герой, связанный с действием </span>
-                              <span class="c1">#    (расшифровка в dictionaries/heroes.csv)</span>
-        <span class="p">},</span> 
-        <span class="o">...</span>
-    <span class="p">],</span><font></font>
+    <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># stage of choosing heroes </font></font></span>
+    <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"picks_bans" </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[ </font></font></span>
+        <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{ </font></font></span>
+            <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"order" </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span>       <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># sequence number of the action </font></font></span>
+            <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"is_pick" </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">false </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span> <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># true if the team selects the hero, false - if the </font></font></span>
+            <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">team " </font></font></span><font style="vertical-align: inherit;"><span class="c1"><font style="vertical-align: inherit;">bans </font></span><span class="s2"><font style="vertical-align: inherit;">" </font></span></font><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span>        <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># the team performing the action (0 - Radiant, 1 - Dire) </font></font></span>
+            <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"hero_id" </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">95 </font></font></span>     <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># hero associated with the action </font></font></span>
+                              <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># (decryption in dictionaries / heroes.csv) </font></font></span>
+        <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">}, </font></font></span> 
+        <span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">... </font></font></span>
+    <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">],</font></font></span><font></font>
 <font></font>
-    <span class="c1"># информация про каждого игрока, список ровно из 10 элементов</span>
-    <span class="c1"># игроки с индексами от 0 до 4 — из команды Radiant, от 5 до 9 — Dire</span>
-    <span class="s2">"players"</span><span class="p">:</span> <span class="p">[</span> 
-        <span class="p">{</span> <font></font>
+    <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># information about each player, a list of exactly 10 elements </font></font></span>
+    <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># players with indices from 0 to 4 - from the Radiant team, from 5 to 9 - Dire </font></font></span>
+    <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"players" </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[ </font></font></span> 
+        <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{</font></font></span> <font></font>
 <font></font>
-            <span class="c1"># герой игрока (расшифровка в dictionaries/heroes.csv)</span>
-            <span class="s2">"hero_id"</span><span class="p">:</span> <span class="mi">67</span><span class="p">,</span>  <font></font>
+            <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># hero of the player (decoding in dictionaries / heroes.csv) </font></font></span>
+            <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"hero_id" </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">67 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">,</font></font></span>  <font></font>
 <font></font>
-            <span class="c1"># временные ряды (отсчеты указаны в поле "times")</span>
-            <span class="s2">"xp_t"</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">115</span><span class="p">,</span> <span class="mi">177</span><span class="p">,</span> <span class="mi">335</span><span class="p">,</span> <span class="o">...</span><span class="p">],</span>   <span class="c1"># опыт</span>
-            <span class="s2">"gold_t"</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">99</span><span class="p">,</span> <span class="mi">243</span><span class="p">,</span> <span class="mi">343</span><span class="p">,</span> <span class="mi">499</span><span class="p">,</span> <span class="o">...</span><span class="p">],</span> <span class="c1"># золото + стоимость всех купленных вещей (net worth)</span>
-            <span class="s2">"lh_t"</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">...</span><span class="p">],</span>          <span class="c1"># количество убитых юнитов (не героев) противника</span><font></font>
+            <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># Time series (the samples are listed in the "Times") </font></font></span>
+            <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"xp_t" </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[ </font></font></span><span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">13 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">115 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">177 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">335 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span> <span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">... </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">] </font></font></span>   <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># experience </font></font></span>
+            <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"gold_t" </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[ </font></font></span><span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">99 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">243 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">343 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">499 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span> <span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. .. </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">], </font></font></span> <font style="vertical-align: inherit;"><span class="s2"><font style="vertical-align: inherit;">#gold </font></span></font><span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">+ cost of all purchased items (net worth) </font></font></span>
+            <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"lh_t" </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[ </font></font></span><span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span> <span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">... </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">],</font></font></span>          <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># the number of killed units (not heroes) of the enemy</font></font></span><font></font>
 <font></font>
-            <span class="c1"># список событий: улучшение способностей героя</span>
-            <span class="s2">"ability_upgrades"</span><span class="p">:</span> <span class="p">[</span>
-                <span class="p">{</span>
-                    <span class="s2">"time"</span><span class="p">:</span> <span class="mi">51</span><span class="p">,</span>      <span class="c1"># игровое время</span>
-                    <span class="s2">"level"</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>      <span class="c1"># уровень игрока, на котором произошло улучшение</span>
-                    <span class="s2">"ability"</span><span class="p">:</span> <span class="mi">5334</span>  <span class="c1"># способность, которая была улучшена </span>
-                                     <span class="c1"># (расшифровка в dictionaries/abilities.csv)</span>
-                <span class="p">},</span> 
-                <span class="o">...</span>
-            <span class="p">],</span><font></font>
+            <span class="c1"><font style="vertical-align: inherit;"></font></span>
+            <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">#list of </font></font></span><font style="vertical-align: inherit;"><span class="c1"><font style="vertical-align: inherit;">events: improving the ability of the hero </font></span><span class="s2"><font style="vertical-align: inherit;">"ability_upgrades" </font></span></font><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[ </font></font></span>
+                <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{ </font></font></span>
+                    <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"" time " </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">51 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span>      <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># playing time </font></font></span>
+                    <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">" level " </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span>      <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># level of the player at which the improvement of </font></font></span>
+                    <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">" ability " </font></font></span><font style="vertical-align: inherit;"><span class="c1"><font style="vertical-align: inherit;">occurred </font></span></font><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5334 </font></font></span>  <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># ability that has been improved </font></font></span>
+                                     <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># (decryption in dictionaries / abilities.csv) </font></font></span>
+                <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">}, </font></font></span> 
+                <span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">... </font></font></span>
+            <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">],</font></font></span><font></font>
 <font></font>
-            <span class="c1"># список событий: убийства</span>
-            <span class="s2">"kills_log"</span><span class="p">:</span> <span class="p">[</span>
-                <span class="p">{</span>
-                    <span class="s2">"time"</span><span class="p">:</span> <span class="mi">831</span><span class="p">,</span>    <span class="c1"># игровое время</span>
-                    <span class="s2">"player"</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span>    <span class="c1"># индекс игрока, чей герой был убит </span>
-                                    <span class="c1">#   (не заполнено, если был убит не герой)</span>
-                    <span class="s2">"unit"</span><span class="p">:</span> <span class="s2">"npc_dota_hero_viper"</span> <span class="c1"># тип убитого юнита</span>
-                <span class="p">},</span> 
-                <span class="o">...</span>
-            <span class="p">],</span><font></font>
+            <span class="c1"><font style="vertical-align: inherit;"></font></span>
+            <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">#list of </font></font></span><font style="vertical-align: inherit;"><span class="c1"><font style="vertical-align: inherit;">events: kills </font></span><span class="s2"><font style="vertical-align: inherit;">"kills_log" </font></span></font><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[ </font></font></span>
+                <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{ </font></font></span>
+                    <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"" time " </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">831 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span>    <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">#game time </font></font></span>
+                    <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">" player " </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span>    <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">#index of the player whose hero was killed </font></font></span>
+                                    <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># (not filled if not a hero was killed) </font></font></span>
+                    <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">" unit " </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">" npc_dota_hero_viper " </font></font></span> <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># type of killed unit </font></font></span>
+                <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">}, </font></font></span> 
+                <span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">... </font></font></span>
+            <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">],</font></font></span><font></font>
 <font></font>
-            <span class="c1"># список событий: покупка предметов</span>
-            <span class="s2">"purchase_log"</span><span class="p">:</span> <span class="p">[</span>
-                <span class="p">{</span>
-                    <span class="s2">"time"</span><span class="p">:</span> <span class="o">-</span><span class="mi">73</span><span class="p">,</span>     <span class="c1"># игровое время</span>
-                                     <span class="c1">#   точка отсчета игрового времени (ноль) начинается через</span>
-                                     <span class="c1">#   несколько минут после фактического начала матча, поэтому</span>
-                                     <span class="c1">#   время некоторых событий может быть отрицательным</span>
-                    <span class="s2">"item_id"</span><span class="p">:</span> <span class="mi">44</span>    <span class="c1"># купленный предмер (расшифровка в dictionaries/items.csv)</span>
-                <span class="p">},</span> 
-                <span class="o">...</span>
-            <span class="p">]</span><font></font>
+            <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">#list of events: purchase of items </font></font></span>
+            <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"purchase_log" </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[ </font></font></span>
+                <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{ </font></font></span>
+                    <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"time" </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">- </font></font></span><span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">73 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span>     <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">#playing time </font></font></span>
+                                     <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># starting point of the playing time (zero) starts </font></font></span>
+                                     <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># several minutes after the actual start of the match, therefore </font></font></span>
+                                     <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># the time of some events may be negative </font></font></span>
+                    <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"item_id " </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">44 </font></font></span>    <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># purchased premer (transcript in dictionaries / items.csv) </font></font></span>
+                <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">}, </font></font></span> 
+                <span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">... </font></font></span>
+            <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">]</font></font></span><font></font>
 <font></font>
-            <span class="c1"># список событий: выкуп героя из таверны</span>
-            <span class="s2">"buyback_log"</span><span class="p">:</span> <span class="p">[</span>
-                <span class="p">{</span><span class="s2">"time"</span><span class="p">:</span> <span class="mi">2507</span><span class="p">},</span>
-                <span class="o">...</span>
-            <span class="p">],</span><font></font>
+            <span class="c1"><font style="vertical-align: inherit;"></font></span>
+            <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">#list of </font></font></span><font style="vertical-align: inherit;"><span class="c1"><font style="vertical-align: inherit;">events: redemption of the hero from the tavern </font></span><span class="s2"><font style="vertical-align: inherit;">"buyback_log" </font></span></font><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[ </font></font></span>
+                <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{ </font></font></span><span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"time" </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2507 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">}, </font></font></span>
+                <span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">... </font></font></span>
+            <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">],</font></font></span><font></font>
 <font></font>
-            <span class="c1"># список событий: установка героем "наблюдателей", позволяющих команде </span>
-            <span class="c1"># следить за чатью игрового поля на некотором расстоянии от точки установки</span>
-            <span class="s2">"obs_log"</span><span class="p">:</span> <span class="p">[</span>
-                <span class="p">{</span>
-                    <span class="s2">"time"</span><span class="p">:</span> <span class="mi">1711</span><span class="p">,</span>    <span class="c1"># игровое время установки</span>
-                    <span class="s2">"xy"</span><span class="p">:</span> <span class="p">[</span><span class="mi">111</span><span class="p">,</span> <span class="mi">130</span><span class="p">]</span> <span class="c1"># координаты игрового поля</span>
-                <span class="p">},</span> 
-                <span class="o">...</span>
-            <span class="p">],</span>
-            <span class="s2">"sen_log"</span><span class="p">:</span> <span class="p">[],</span> <span class="c1"># аналогично полю obs_log, другой тип "наблюдателя"</span><font></font>
+            <span class="c1"><font style="vertical-align: inherit;"></font></span>
+            <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">#list of </font></font></span>
+            <font style="vertical-align: inherit;"><span class="c1"><font style="vertical-align: inherit;">events: the hero’s installation of “observers”, allowing the team </font></span><span class="c1"><font style="vertical-align: inherit;">#to monitor the part of the playing field at a certain distance from the </font></span></font><span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">obs_log </font></font></span><font style="vertical-align: inherit;"><span class="c1"><font style="vertical-align: inherit;">installation point </font></span></font><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[ </font></font></span>
+                <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{ </font></font></span>
+                    <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"time" </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1711 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span>    <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># playing time of the installation </font></font></span>
+                    <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"xy" </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[ </font></font></span><span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">111 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">130 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">] </font></font></span> <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># coordinates of the playing field </font></font></span>
+                <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">}, </font></font></span> 
+                <span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">... </font></font></span>
+            <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">], </font></font></span>
+            <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"sen_log" </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[], </font></font></span> <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># similar to the obs_log field, another type of "observer"</font></font></span><font></font>
 <font></font>
-        <span class="p">},</span>
-        <span class="o">...</span>
-    <span class="p">],</span><font></font>
+        <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">}, </font></font></span>
+        <span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">... </font></font></span>
+    <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">],</font></font></span><font></font>
 <font></font>
-    <span class="c1"># отсчеты игрового времени, в которые вычисляются значения временных рядов</span>
-    <span class="s2">"times"</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">120</span><span class="p">,</span> <span class="mi">180</span><span class="p">,</span> <span class="o">...</span><span class="p">],</span><font></font>
+    <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># samples of playing time, in which the values ​​of the time series </font></font></span>
+    <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"times" </font></font></span><font style="vertical-align: inherit;"><span class="c1"><font style="vertical-align: inherit;">are calculated </font></span></font><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[ </font></font></span><span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">60 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">120 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">180 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span> <span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">... </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">],</font></font></span><font></font>
 <font></font>
-    <span class="c1"># ключевые события игры</span>
-    <span class="s2">"objectives"</span><span class="p">:</span> <span class="p">[</span>
-        <span class="p">{</span>
-            <span class="s2">"time"</span><span class="p">:</span> <span class="mi">198</span><span class="p">,</span>           <span class="c1"># время события</span>
-            <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"firstblood"</span><span class="p">,</span>  <span class="c1"># тип события</span>
-            <span class="s2">"player1"</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span>          <span class="c1"># параметры события, могут содержать</span>
-            <span class="s2">"player2"</span><span class="p">:</span> <span class="mi">1</span>           <span class="c1">#   индексы игроков (player), </span>
-                                   <span class="c1">#   номер команды (team, 0 — Radiant, 1 — Dire)</span>
-        <span class="p">},</span> 
-        <span class="p">{</span>
-            <span class="s2">"time"</span><span class="p">:</span> <span class="mi">765</span><span class="p">,</span> 
-            <span class="s2">"type"</span><span class="p">:</span> <span class="s2">"tower_kill"</span><span class="p">,</span> 
-            <span class="s2">"player"</span><span class="p">:</span> <span class="mi">7</span><span class="p">,</span> 
-            <span class="s2">"team"</span><span class="p">:</span> <span class="mi">1</span>
-        <span class="p">},</span> 
-        <span class="o">...</span>
-    <span class="p">]</span><font></font>
+    <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># key events of the game </font></font></span>
+    <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"objectives" </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[ </font></font></span>
+        <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{ </font></font></span>
+            <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"time" </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">198 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span>           <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># time of the event </font></font></span>
+            <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"type" </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"firstblood" </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span>  <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># event type </font></font></span>
+            <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"player1" </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">6 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span>          <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># event parameters, may contain </font></font></span>
+            <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"player2" </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1 </font></font></span>           <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># player indices (player), </font></font></span>
+                                   <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># team number (team, 0 - Radiant, 1 - Dire) </font></font></span>
+        <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">}, </font></font></span> 
+        <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{ </font></font></span>
+            <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"time" </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">765 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span> 
+            <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"type" </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"tower_kill" </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span> 
+            <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"player" </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span> 
+            <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"team"</font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1 </font></font></span>
+        <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">},</font></font></span> 
+        <span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">... </font></font></span>
+    <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">]</font></font></span><font></font>
 <font></font>
-    <span class="c1"># итог матча (отсутствует в тестовых матчах)</span>
-    <span class="s2">"finish"</span><span class="p">:</span> <span class="p">{</span>
-        <span class="s2">"duration"</span><span class="p">:</span> <span class="mi">2980</span><span class="p">,</span>             <span class="c1"># длительность в секундах</span>
-        <span class="s2">"radiant_win"</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>         <span class="c1"># true, если победила команда Radiant</span>
-        <span class="s2">"tower_status_radiant"</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>    <span class="c1"># состояние башен у команд к концу игры</span>
-        <span class="s2">"tower_status_dire"</span><span class="p">:</span> <span class="mi">1972</span><span class="p">,</span>    <span class="c1">#   (см. описание битовой маски)</span>
-        <span class="s2">"barracks_status_dire"</span><span class="p">:</span> <span class="mi">63</span><span class="p">,</span>   <span class="c1"># состояние бараков у команд к концу игры</span>
-        <span class="s2">"barracks_status_radiant"</span><span class="p">:</span> <span class="mi">0</span>  <span class="c1">#   (см. описание битовой маски)</span>
-    <span class="p">}</span>
-<span class="p">}</span>
+    <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># match result (not available in test matches) </font></font></span>
+    <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"finish" </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{ </font></font></span>
+        <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"duration" </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2980 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span>             <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># duration in seconds </font></font></span>
+        <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"radiant_win" </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">false </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span>         <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># true if the Radiant </font></font></span>
+        <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">"tower_status_radiant" </font></font></span><font style="vertical-align: inherit;"><span class="c1"><font style="vertical-align: inherit;">team won </font></span></font><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span>    <font style="vertical-align: inherit;"><span class="s2"><font style="vertical-align: inherit;">#the </font></span></font><span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">state of the towers of the teams by the end </font></font></span>
+        <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tower_status_dire </font></font></span><font style="vertical-align: inherit;"><span class="c1"><font style="vertical-align: inherit;">games </font></span></font><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1972 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span>    <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># (see bitmask description) </font></font></span>
+        <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">barracks_status_dire </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">63 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span>   <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># teams </font></font></span>
+        <span class="s2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">' barracks </font></font></span><font style="vertical-align: inherit;"><span class="c1"><font style="vertical-align: inherit;">state by the end of </font></span><span class="s2"><font style="vertical-align: inherit;">barracks_status_radiant </font></span></font><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0 </font></font></span>  <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># (seebit mask description) </font></font></span>
+    <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">} </font></font></span>
+<span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">}</font></font></span>
 </pre></div>
 
 </div>
@@ -477,7 +477,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Описание-полей-состояния-башен-и-бараков">Описание полей состояния башен и бараков<a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%BE%D0%BB%D0%B5%D0%B9-%D1%81%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D1%8F-%D0%B1%D0%B0%D1%88%D0%B5%D0%BD-%D0%B8-%D0%B1%D0%B0%D1%80%D0%B0%D0%BA%D0%BE%D0%B2">¶</a></h4><p>Состояние башен к концу игры задается целым числом, закодировано в битах:</p>
+<h4 id="Описание-полей-состояния-башен-и-бараков"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Description of the status fields of towers and barracks </font></font><a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%BE%D0%BB%D0%B5%D0%B9-%D1%81%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D1%8F-%D0%B1%D0%B0%D1%88%D0%B5%D0%BD-%D0%B8-%D0%B1%D0%B0%D1%80%D0%B0%D0%BA%D0%BE%D0%B2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¶</font></font></a></h4><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The state of the towers at the end of the game is set by an integer, encoded in bits:</font></font></p>
 
 <pre><code>┌─┬─┬─┬─┬─────────────────────── Not used.<font></font>
 │ │ │ │ │ ┌───────────────────── Ancient Bottom<font></font>
@@ -493,7 +493,7 @@ div#notebook {
 │ │ │ │ │ │ │ │ │ │ │ │ │ │ │ ┌─ Top Tier 1<font></font>
 │ │ │ │ │ │ │ │ │ │ │ │ │ │ │ │<font></font>
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</code></pre>
-<p>Состояние бараков к концу игры закодировано в битах целого числа:</p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The state of the barracks at the end of the game is encoded in bits of an integer:</font></font></p>
 
 <pre><code>┌─┬───────────── Not used.<font></font>
 │ │ ┌─────────── Bottom Ranged<font></font>
@@ -513,8 +513,8 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Извлечение-признаков">Извлечение признаков<a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%98%D0%B7%D0%B2%D0%BB%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%B8%D0%B7%D0%BD%D0%B0%D0%BA%D0%BE%D0%B2">¶</a></h2><p>Скрипт extract_features.py производит извлечение признаков из известной информации о матче за первые 5 игровых минут, составляет из них таблицу. Таблица поможет вам быстрее сформировать матрицу объект-признак, вектор ответов и начать применять методы машинного обучения для решения поставленной задачи.</p>
-<p>Признаки, представленные в таблице <code>features.csv</code>, по мнению экспертов в предметной области являются наиболее важными для решения задачи предсказания победы команды. Тем не менее, не обязательно использовать эти признаки в исходном виде для применения методов машинного обучения — вы можете сделать новые признаки из имеющихся. Более того, признаки в файле <code>features.csv</code> содержат не всю информацию, известную про матч за первые 5 игровых минут. Вы можете использовать скрипт <code>extract_features.py</code> как пример и добавлять свои признаки для улучшения качества предсказания.</p>
+<h2 id="Извлечение-признаков"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Feature extraction </font></font><a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%98%D0%B7%D0%B2%D0%BB%D0%B5%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%B8%D0%B7%D0%BD%D0%B0%D0%BA%D0%BE%D0%B2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¶</font></font></a></h2><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The extract_features.py script extracts attributes from the known information about the match in the first 5 game minutes, compiles a table from them. </font><font style="vertical-align: inherit;">The table will help you quickly form an object-attribute matrix, a response vector, and begin to apply machine learning methods to solve the problem.</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The signs presented in the table </font></font><code>features.csv</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, according to experts in the subject area, are most important for solving the problem of predicting the victory of the team. </font><font style="vertical-align: inherit;">However, it is not necessary to use these features in their original form to apply machine learning methods - you can make new features from existing ones. </font><font style="vertical-align: inherit;">Moreover, the signs in the file </font></font><code>features.csv</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">do not contain all the information known about the match in the first 5 game minutes. </font><font style="vertical-align: inherit;">You can use the script </font></font><code>extract_features.py</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">as an example and add your own attributes to improve the quality of the prediction.</font></font></p>
 
 </div>
 </div>
@@ -524,19 +524,19 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Пример-чтения-файла-с-признаками">Пример чтения файла с признаками<a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D1%80-%D1%87%D1%82%D0%B5%D0%BD%D0%B8%D1%8F-%D1%84%D0%B0%D0%B9%D0%BB%D0%B0-%D1%81-%D0%BF%D1%80%D0%B8%D0%B7%D0%BD%D0%B0%D0%BA%D0%B0%D0%BC%D0%B8">¶</a></h4>
+<h4 id="Пример-чтения-файла-с-признаками"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Example of reading a file with signs </font></font><a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D1%80-%D1%87%D1%82%D0%B5%D0%BD%D0%B8%D1%8F-%D1%84%D0%B0%D0%B9%D0%BB%D0%B0-%D1%81-%D0%BF%D1%80%D0%B8%D0%B7%D0%BD%D0%B0%D0%BA%D0%B0%D0%BC%D0%B8"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¶</font></font></a></h4>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">In [3]:</font></font></div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="kn">import</span> <span class="nn">pandas</span>
-<span class="n">features</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'./features.csv'</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="s1">'match_id'</span><span class="p">)</span><font></font>
+<div class=" highlight hl-ipython2"><pre><span class="kn"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">import </font></font></span> <span class="nn"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">pandas </font></font></span>
+<span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">features </font></font></span> <span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">= </font></font></span> <span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">pandas </font></font></span><span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font></font></span><span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">read_csv </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">( </font></font></span><span class="s1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">'./features.csv' </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span> <span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">index_col </font></font></span><span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">= </font></font></span><span class="s1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">'match_id' </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">)</font></font></span><font></font>
 <font></font>
-<span class="n">features</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">features </font></font></span><span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font></font></span><span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">head </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">()</font></font></span>
 </pre></div>
 
 </div>
@@ -547,7 +547,7 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[3]:</div>
+<div class="output_area"><div class="prompt output_prompt"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Out [3]:</font></font></div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -555,30 +555,30 @@ div#notebook {
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>start_time</th>
-      <th>lobby_type</th>
-      <th>r1_hero</th>
-      <th>r1_level</th>
-      <th>r1_xp</th>
-      <th>r1_gold</th>
-      <th>r1_lh</th>
-      <th>r1_kills</th>
-      <th>r1_deaths</th>
-      <th>r1_items</th>
-      <th>...</th>
-      <th>dire_boots_count</th>
-      <th>dire_ward_observer_count</th>
-      <th>dire_ward_sentry_count</th>
-      <th>dire_first_ward_time</th>
-      <th>duration</th>
-      <th>radiant_win</th>
-      <th>tower_status_radiant</th>
-      <th>tower_status_dire</th>
-      <th>barracks_status_radiant</th>
-      <th>barracks_status_dire</th>
+      <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">start_time</font></font></th>
+      <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">lobby_type</font></font></th>
+      <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">r1_hero</font></font></th>
+      <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">r1_level</font></font></th>
+      <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">r1_xp</font></font></th>
+      <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">r1_gold</font></font></th>
+      <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">r1_lh</font></font></th>
+      <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">r1_kills</font></font></th>
+      <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">r1_deaths</font></font></th>
+      <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">r1_items</font></font></th>
+      <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">...</font></font></th>
+      <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">dire_boots_count</font></font></th>
+      <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">dire_ward_observer_count</font></font></th>
+      <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">dire_ward_sentry_count</font></font></th>
+      <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">dire_first_ward_time</font></font></th>
+      <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">duration</font></font></th>
+      <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">radiant_win</font></font></th>
+      <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tower_status_radiant</font></font></th>
+      <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tower_status_dire</font></font></th>
+      <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">barracks_status_radiant</font></font></th>
+      <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">barracks_status_dire</font></font></th>
     </tr>
     <tr>
-      <th>match_id</th>
+      <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">match_id</font></font></th>
       <th></th>
       <th></th>
       <th></th>
@@ -604,128 +604,128 @@ div#notebook {
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
-      <td>1430198770</td>
-      <td>7</td>
-      <td>11</td>
-      <td>5</td>
-      <td>2098</td>
-      <td>1489</td>
-      <td>20</td>
-      <td>0</td>
-      <td>0</td>
-      <td>7</td>
-      <td>...</td>
-      <td>4</td>
-      <td>2</td>
-      <td>2</td>
-      <td>-52</td>
-      <td>2874</td>
-      <td>1</td>
-      <td>1796</td>
-      <td>0</td>
-      <td>51</td>
-      <td>0</td>
+      <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0</font></font></th>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1430198770</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">eleven</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2098</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1489</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">twenty</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">...</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">four</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">-52</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2874</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">one</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1796</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">51</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0</font></font></td>
     </tr>
     <tr>
-      <th>1</th>
-      <td>1430220345</td>
-      <td>0</td>
-      <td>42</td>
-      <td>4</td>
-      <td>1188</td>
-      <td>1033</td>
-      <td>9</td>
-      <td>0</td>
-      <td>1</td>
-      <td>12</td>
-      <td>...</td>
-      <td>4</td>
-      <td>3</td>
-      <td>1</td>
-      <td>-5</td>
-      <td>2463</td>
-      <td>1</td>
-      <td>1974</td>
-      <td>0</td>
-      <td>63</td>
-      <td>1</td>
+      <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">one</font></font></th>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1430220345</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">42</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">four</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1188</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1033</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">9</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">one</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">12</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">...</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">four</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">one</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">-5</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2463</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">one</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1974</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">63</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">one</font></font></td>
     </tr>
     <tr>
-      <th>2</th>
-      <td>1430227081</td>
-      <td>7</td>
-      <td>33</td>
-      <td>4</td>
-      <td>1319</td>
-      <td>1270</td>
-      <td>22</td>
-      <td>0</td>
-      <td>0</td>
-      <td>12</td>
-      <td>...</td>
-      <td>4</td>
-      <td>3</td>
-      <td>1</td>
-      <td>13</td>
-      <td>2130</td>
-      <td>0</td>
-      <td>0</td>
-      <td>1830</td>
-      <td>0</td>
-      <td>63</td>
+      <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font></th>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1430227081</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">33</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">four</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1319</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1270</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">22</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">12</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">...</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">four</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">one</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">13</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2130</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1830</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">63</font></font></td>
     </tr>
     <tr>
-      <th>3</th>
-      <td>1430263531</td>
-      <td>1</td>
-      <td>29</td>
-      <td>4</td>
-      <td>1779</td>
-      <td>1056</td>
-      <td>14</td>
-      <td>0</td>
-      <td>0</td>
-      <td>5</td>
-      <td>...</td>
-      <td>4</td>
-      <td>2</td>
-      <td>0</td>
-      <td>27</td>
-      <td>1459</td>
-      <td>0</td>
-      <td>1920</td>
-      <td>2047</td>
-      <td>50</td>
-      <td>63</td>
+      <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></th>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1430263531</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">one</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">29th</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">four</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1779</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1056</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">fourteen</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">...</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">four</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">27</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1459</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1920</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2047</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">fifty</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">63</font></font></td>
     </tr>
     <tr>
-      <th>4</th>
-      <td>1430282290</td>
-      <td>7</td>
-      <td>13</td>
-      <td>4</td>
-      <td>1431</td>
-      <td>1090</td>
-      <td>8</td>
-      <td>1</td>
-      <td>0</td>
-      <td>8</td>
-      <td>...</td>
-      <td>3</td>
-      <td>3</td>
-      <td>0</td>
-      <td>-16</td>
-      <td>2449</td>
-      <td>0</td>
-      <td>4</td>
-      <td>1974</td>
-      <td>3</td>
-      <td>63</td>
+      <th><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">four</font></font></th>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1430282290</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">13</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">four</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1431</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1090</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">one</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">...</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">-16</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2449</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">four</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1974</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></td>
+      <td><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">63</font></font></td>
     </tr>
   </tbody>
 </table>
-<p>5 rows × 108 columns</p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5 rows × 108 columns</font></font></p>
 </div>
 </div>
 
@@ -740,43 +740,43 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Описание-признаков-в-таблице">Описание признаков в таблице<a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%B8%D0%B7%D0%BD%D0%B0%D0%BA%D0%BE%D0%B2-%D0%B2-%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B5">¶</a></h4><ul>
-<li><code>match_id</code>: идентификатор матча в наборе данных</li>
-<li><code>start_time</code>: время начала матча (unixtime)</li>
-<li><code>lobby_type</code>: тип комнаты, в которой собираются игроки (расшифровка в <code>dictionaries/lobbies.csv</code>)</li>
-<li>Наборы признаков для каждого игрока (игроки команды Radiant — префикс <code>rN</code>, Dire — <code>dN</code>):<ul>
-<li><code>r1_hero</code>: герой игрока (расшифровка в dictionaries/heroes.csv)</li>
-<li><code>r1_level</code>: максимальный достигнутый уровень героя (за первые 5 игровых минут)</li>
-<li><code>r1_xp</code>: максимальный полученный опыт</li>
-<li><code>r1_gold</code>: достигнутая ценность героя</li>
-<li><code>r1_lh</code>: число убитых юнитов</li>
-<li><code>r1_kills</code>: число убитых игроков</li>
-<li><code>r1_deaths</code>: число смертей героя</li>
-<li><code>r1_items</code>: число купленных предметов</li>
+<h4 id="Описание-признаков-в-таблице"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Description of characteristics in table </font></font><a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D1%80%D0%B8%D0%B7%D0%BD%D0%B0%D0%BA%D0%BE%D0%B2-%D0%B2-%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¶</font></font></a></h4><ul>
+<li><code>match_id</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: match ID in the dataset</font></font></li>
+<li><code>start_time</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: match start time (unixtime)</font></font></li>
+<li><code>lobby_type</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: type of room in which players gather (transcript in </font></font><code>dictionaries/lobbies.csv</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">)</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Character sets for each player (Radiant players - prefix </font></font><code>rN</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, Dire - </font></font><code>dN</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">):</font></font><ul>
+<li><code>r1_hero</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: player hero (transcript in dictionaries / heroes.csv)</font></font></li>
+<li><code>r1_level</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: maximum hero level achieved (in the first 5 game minutes)</font></font></li>
+<li><code>r1_xp</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: maximum experience gained</font></font></li>
+<li><code>r1_gold</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: hero value achieved</font></font></li>
+<li><code>r1_lh</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: number of units killed</font></font></li>
+<li><code>r1_kills</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: number of players killed</font></font></li>
+<li><code>r1_deaths</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: hero deaths</font></font></li>
+<li><code>r1_items</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: number of items purchased</font></font></li>
 </ul>
 </li>
-<li>Признаки события "первая кровь" (first blood). Если событие "первая кровь" не успело произойти за первые 5 минут, то признаки принимают пропущенное значение<ul>
-<li><code>first_blood_time</code>: игровое время первой крови</li>
-<li><code>first_blood_team</code>: команда, совершившая первую кровь (0 — Radiant, 1 — Dire)</li>
-<li><code>first_blood_player1</code>: игрок, причастный к событию</li>
-<li><code>first_blood_player2</code>: второй игрок, причастный к событию</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Signs of the first blood event. </font><font style="vertical-align: inherit;">If the event "first blood" did not have time to occur in the first 5 minutes, then the signs take the missing value</font></font><ul>
+<li><code>first_blood_time</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: playing time of the first blood</font></font></li>
+<li><code>first_blood_team</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: First Blood Team (0 - Radiant, 1 - Dire)</font></font></li>
+<li><code>first_blood_player1</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: player involved in the event</font></font></li>
+<li><code>first_blood_player2</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: second player involved in the event</font></font></li>
 </ul>
 </li>
-<li>Признаки для каждой команды (префиксы <code>radiant_</code> и <code>dire_</code>)<ul>
-<li><code>radiant_bottle_time</code>: время первого приобретения командой предмета "bottle"</li>
-<li><code>radiant_courier_time</code>: время приобретения предмета "courier" </li>
-<li><code>radiant_flying_courier_time</code>: время приобретения предмета "flying_courier" </li>
-<li><code>radiant_tpscroll_count</code>: число предметов "tpscroll" за первые 5 минут</li>
-<li><code>radiant_boots_count</code>: число предметов "boots"</li>
-<li><code>radiant_ward_observer_count</code>: число предметов "ward_observer"</li>
-<li><code>radiant_ward_sentry_count</code>: число предметов "ward_sentry"</li>
-<li><code>radiant_first_ward_time</code>: время установки командой первого "наблюдателя", т.е. предмета, который позволяет видеть часть игрового поля</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Attributes for each team (prefixes </font></font><code>radiant_</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">and </font></font><code>dire_</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">)</font></font><ul>
+<li><code>radiant_bottle_time</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: time the team first acquired the item "bottle"</font></font></li>
+<li><code>radiant_courier_time</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: acquisition time for courier </font></font></li>
+<li><code>radiant_flying_courier_time</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: acquisition time for flying_courier </font></font></li>
+<li><code>radiant_tpscroll_count</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: tpscroll items in the first 5 minutes</font></font></li>
+<li><code>radiant_boots_count</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: number of items "boots"</font></font></li>
+<li><code>radiant_ward_observer_count</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: number of items "ward_observer"</font></font></li>
+<li><code>radiant_ward_sentry_count</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: number of ward_sentry items</font></font></li>
+<li><code>radiant_first_ward_time</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: installation time of the first "observer" command, i.e. </font><font style="vertical-align: inherit;">an object that allows you to see part of the playing field</font></font></li>
 </ul>
 </li>
-<li>Итог матча (данные поля отсутствуют в тестовой выборке, поскольку содержат информацию, выходящую за пределы первых 5 минут матча)<ul>
-<li><code>duration</code>: длительность</li>
-<li><code>radiant_win</code>: 1, если победила команда Radiant, 0 — иначе</li>
-<li>Состояние башен и барраков к концу матча (см. описание полей набора данных)<ul>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Match result (these fields are not in the test sample, because they contain information that goes beyond the first 5 minutes of the match)</font></font><ul>
+<li><code>duration</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: duration</font></font></li>
+<li><code>radiant_win</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">: 1 if the Radiant team won, 0 otherwise</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The state of towers and barracks at the end of the match (see the description of the data set fields)</font></font><ul>
 <li><code>tower_status_radiant</code></li>
 <li><code>tower_status_dire</code></li>
 <li><code>barracks_status_radiant</code></li>
@@ -795,8 +795,8 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Метрика-качества">Метрика качества<a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%9C%D0%B5%D1%82%D1%80%D0%B8%D0%BA%D0%B0-%D0%BA%D0%B0%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%B0">¶</a></h2><p>В качестве метрики качества мы будем использовать площадь под ROC-кривой (AUC-ROC). Обратите внимание, что AUC-ROC — это метрика качества для алгоритма, выдающего оценки принадлежности первому классу. Оба алгоритма, которые будут использоваться в проекте — градиентный бустинг, и логистическая регрессия — умеют выдавать такие оценки. Для этого нужно получать предсказания с помощью функции predict_proba. Она возвращает два столбца: первый содержит оценки принадлежности нулевому классу, второй — первому классу. Вам нужны значения из второго столбца:</p>
-<div class="highlight"><pre><span class="n">pred</span> <span class="o">=</span> <span class="n">clf</span><span class="o">.</span><span class="n">predict_proba</span><span class="p">(</span><span class="n">X_test</span><span class="p">)[:,</span> <span class="mi">1</span><span class="p">]</span>
+<h2 id="Метрика-качества"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Quality Metric </font></font><a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%9C%D0%B5%D1%82%D1%80%D0%B8%D0%BA%D0%B0-%D0%BA%D0%B0%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%B0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¶</font></font></a></h2><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">We will use the area under the ROC curve (AUC-ROC) as a quality metric. </font><font style="vertical-align: inherit;">Note that AUC-ROC is a quality metric for an algorithm that provides first-class membership ratings. </font><font style="vertical-align: inherit;">Both algorithms that will be used in the project - gradient boosting, and logistic regression - are able to produce such estimates. </font><font style="vertical-align: inherit;">To do this, you need to get the predictions using the predict_proba function. </font><font style="vertical-align: inherit;">It returns two columns: the first contains estimates of belonging to the zero class, the second - to the first class. </font><font style="vertical-align: inherit;">You need the values ​​from the second column:</font></font></p>
+<div class="highlight"><pre><span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">pred </font></font></span> <span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">= </font></font></span> <span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">clf </font></font></span><span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font></font></span><span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">predict_proba </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">( </font></font></span><span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">X_test </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">) [:, </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">]</font></font></span>
 </pre></div>
 
 </div>
@@ -807,8 +807,8 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Руководство-по-решению">Руководство по решению<a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%A0%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE-%D0%BF%D0%BE-%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D1%8E">¶</a></h2><p>Вам необходимо провести описанные ниже два этапа исследования, написать по результатам каждого этапа небольшой отчет (ниже указаны вопросы, ответы на которые должны содержаться в отчете), и предоставить для ревью данный отчет и код, с помощью которого вы выполнили задание.</p>
-<p><strong>Обратите внимание:</strong> высокое качество работы на кросс-валидации (близкое к 100%) — это в первую очередь повод задуматься о том, правильно ли вы обучаете модель. Возможно, вы заглядываете в будущее или настраиваетесь на неправильном наборе признаков.</p>
+<h2 id="Руководство-по-решению"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Solution Guide </font></font><a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%A0%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE-%D0%BF%D0%BE-%D1%80%D0%B5%D1%88%D0%B5%D0%BD%D0%B8%D1%8E"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¶</font></font></a></h2><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">You need to carry out the two stages of the research described below, write a small report on the results of each stage (the questions are indicated below, the answers to which should be contained in the report), and provide this report and the code with which you completed the task for the review.</font></font></p>
+<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Please note: the</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> high quality of work on cross-validation (close to 100%) is first of all an occasion to think about whether you are training the model correctly. </font><font style="vertical-align: inherit;">Perhaps you are looking into the future or tuning in to the wrong set of attributes.</font></font></p>
 
 </div>
 </div>
@@ -818,36 +818,36 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Подход-1:-градиентный-бустинг-&quot;в-лоб&quot;">Подход 1: градиентный бустинг "в лоб"<a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%9F%D0%BE%D0%B4%D1%85%D0%BE%D0%B4-1:-%D0%B3%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D0%BD%D1%8B%D0%B9-%D0%B1%D1%83%D1%81%D1%82%D0%B8%D0%BD%D0%B3-%22%D0%B2-%D0%BB%D0%BE%D0%B1%22">¶</a></h3><p>Один из самых универсальных алгоритмов, изученных в нашем курсе, является градиентный бустинг. Он не очень требователен к данным, восстанавливает нелинейные зависимости, и хорошо работает на многих наборах данных, что и обуславливает его популярность. Вполне разумной мыслью будет попробовать именно его в первую очередь.</p>
+<h3 id="Подход-1:-градиентный-бустинг-&quot;в-лоб&quot;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Approach 1: gradient forehead boosting </font></font><a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%9F%D0%BE%D0%B4%D1%85%D0%BE%D0%B4-1:-%D0%B3%D1%80%D0%B0%D0%B4%D0%B8%D0%B5%D0%BD%D1%82%D0%BD%D1%8B%D0%B9-%D0%B1%D1%83%D1%81%D1%82%D0%B8%D0%BD%D0%B3-%22%D0%B2-%D0%BB%D0%BE%D0%B1%22"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¶</font></font></a></h3><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">One of the most versatile algorithms studied in our course is gradient boosting. </font><font style="vertical-align: inherit;">It is not very demanding on data, restores non-linear dependencies, and works well on many data sets, which determines its popularity. </font><font style="vertical-align: inherit;">It is a reasonable idea to try it in the first place.</font></font></p>
 <ol>
-<li>Считайте таблицу с признаками из файла features.csv с помощью кода, приведенного выше. Удалите признаки, связанные с итогами матча (они помечены в описании данных как отсутствующие в тестовой выборке).</li>
-<li>Проверьте выборку на наличие пропусков с помощью функции count(), которая для каждого столбца показывает число заполненных значений. Много ли пропусков в данных? Запишите названия признаков, имеющих пропуски, и попробуйте для любых двух из них дать обоснование, почему их значения могут быть пропущены.</li>
-<li>Замените пропуски на нули с помощью функции fillna(). На самом деле этот способ является предпочтительным для логистической регрессии, поскольку он позволит пропущенному значению не вносить никакого вклада в предсказание. Для деревьев часто лучшим вариантом оказывается замена пропуска на очень большое или очень маленькое значение — в этом случае при построении разбиения вершины можно будет отправить объекты с пропусками в отдельную ветвь дерева. Также есть и другие подходы — например, замена пропуска на среднее значение признака. Мы не требуем этого в задании, но при желании попробуйте разные подходы к обработке пропусков и сравните их между собой.</li>
-<li>Какой столбец содержит целевую переменную? Запишите его название.</li>
-<li>Забудем, что в выборке есть категориальные признаки, и попробуем обучить градиентный бустинг над деревьями на имеющейся матрице "объекты-признаки". Зафиксируйте генератор разбиений для кросс-валидации по 5 блокам (KFold), не забудьте перемешать при этом выборку (shuffle=True), поскольку данные в таблице отсортированы по времени, и без перемешивания можно столкнуться с нежелательными эффектами при оценивании качества. Оцените качество градиентного бустинга (GradientBoostingClassifier) с помощью данной кросс-валидации, попробуйте при этом разное количество деревьев (как минимум протестируйте следующие значения для количества деревьев: 10, 20, 30). Долго ли настраивались классификаторы? Достигнут ли оптимум на испытанных значениях параметра n_estimators, или же качество, скорее всего, продолжит расти при дальнейшем его увеличении?</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Read the feature table from the features.csv file using the code above. </font><font style="vertical-align: inherit;">Remove the signs associated with the outcome of the match (they are marked in the data description as being absent in the test sample).</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Check the sample for gaps using the count () function, which for each column shows the number of filled values. </font><font style="vertical-align: inherit;">Are there many data gaps? </font><font style="vertical-align: inherit;">Write down the names of the signs with gaps, and try to give a justification for any two of them why their values ​​may be omitted.</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Replace the blanks with zeros using the fillna () function. </font><font style="vertical-align: inherit;">In fact, this method is preferable for logistic regression, since it allows the missing value not to contribute to the prediction. </font><font style="vertical-align: inherit;">For trees, often the best option is to replace the skip with a very large or very small value - in this case, when constructing a vertex split, you can send objects with skips to a separate branch of the tree. </font><font style="vertical-align: inherit;">There are also other approaches - for example, replacing a pass with the average value of a characteristic. </font><font style="vertical-align: inherit;">We do not require this in the task, but if desired, try different approaches to processing passes and compare them with each other.</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Which column contains the target variable? </font><font style="vertical-align: inherit;">Write down its name.</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Forget that there are categorical features in the sample, and try to train gradient boosting over trees on the existing "feature-signs" matrix. </font><font style="vertical-align: inherit;">Fix the partition generator for cross-validation in 5 blocks (KFold), do not forget to shuffle the sample (shuffle = True), since the data in the table is sorted by time, and without mixing you may encounter undesirable effects when evaluating quality. </font><font style="vertical-align: inherit;">Evaluate the quality of gradient boosting (GradientBoostingClassifier) ​​using this cross-validation, try a different number of trees (at least test the following values ​​for the number of trees: 10, 20, 30). </font><font style="vertical-align: inherit;">How long have classifiers been tuned? </font><font style="vertical-align: inherit;">Is the optimum achieved on the tested values ​​of the n_estimators parameter, or is the quality most likely to continue to grow with its further increase?</font></font></li>
 </ol>
-<h5 id="Что-указать-в-отчете">Что указать в отчете<a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%A7%D1%82%D0%BE-%D1%83%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C-%D0%B2-%D0%BE%D1%82%D1%87%D0%B5%D1%82%D0%B5">¶</a></h5><p>В отчете по данному этапу вы должны ответить на следующие вопросы:</p>
+<h5 id="Что-указать-в-отчете"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">What to indicate in the report </font></font><a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%A7%D1%82%D0%BE-%D1%83%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C-%D0%B2-%D0%BE%D1%82%D1%87%D0%B5%D1%82%D0%B5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¶</font></font></a></h5><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">In the report for this stage, you should answer the following questions:</font></font></p>
 <ol>
-<li>Какие признаки имеют пропуски среди своих значений? Что могут означать пропуски в этих признаках (ответьте на этот вопрос для двух любых признаков)?</li>
-<li>Как называется столбец, содержащий целевую переменную?</li>
-<li>Как долго проводилась кросс-валидация для градиентного бустинга с 30 деревьями? Инструкцию по измерению времени можно найти ниже по тексту. Какое качество при этом получилось? Напомним, что в данном задании мы используем метрику качества AUC-ROC.</li>
-<li>Имеет ли смысл использовать больше 30 деревьев в градиентном бустинге? Что бы вы предложили делать, чтобы ускорить его обучение при увеличении количества деревьев?</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">What signs have omissions among their meanings? </font><font style="vertical-align: inherit;">What can the omissions in these signs mean (answer this question for any two signs)?</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">What is the name of the column containing the target variable?</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">How long has cross validation been done for gradient boosting with 30 trees? </font><font style="vertical-align: inherit;">Instructions for measuring time can be found below. </font><font style="vertical-align: inherit;">What quality did you get? </font><font style="vertical-align: inherit;">Recall that in this assignment we use the AUC-ROC quality metric.</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Does it make sense to use more than 30 trees in gradient boosting? </font><font style="vertical-align: inherit;">What would you suggest doing in order to speed up his learning while increasing the number of trees?</font></font></li>
 </ol>
-<h5 id="Рекомендации-и-советы">Рекомендации и советы<a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%A0%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%86%D0%B8%D0%B8-%D0%B8-%D1%81%D0%BE%D0%B2%D0%B5%D1%82%D1%8B">¶</a></h5><ul>
-<li>Если все работает очень медлено:<ul>
-<li>Используйте для обучения и кросс-валидации не всю выборку, а некоторое ее подмножество — например, половину объектов. Подмножество лучше всего брать случайным, а не формировать его из первых m объектов.</li>
-<li>Попробуйте упростить модель — например, уменьшить глубину деревьев в градиентом бустинге (max_depth).</li>
+<h5 id="Рекомендации-и-советы"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tips and Tricks </font></font><a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%A0%D0%B5%D0%BA%D0%BE%D0%BC%D0%B5%D0%BD%D0%B4%D0%B0%D1%86%D0%B8%D0%B8-%D0%B8-%D1%81%D0%BE%D0%B2%D0%B5%D1%82%D1%8B"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¶</font></font></a></h5><ul>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">If everything works very slowly:</font></font><ul>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Use for training and cross-validation not the entire sample, but some subset of it - for example, half of the objects. </font><font style="vertical-align: inherit;">It is best to take a subset randomly, rather than form it from the first m objects.</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Try to simplify the model - for example, reduce the depth of trees in gradient boosting (max_depth).</font></font></li>
 </ul>
 </li>
 </ul>
-<h5 id="Измерение-времени-работы-кода">Измерение времени работы кода<a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%98%D0%B7%D0%BC%D0%B5%D1%80%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%B8-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B-%D0%BA%D0%BE%D0%B4%D0%B0">¶</a></h5><div class="highlight"><pre><span class="kn">import</span> <span class="nn">time</span>
-<span class="kn">import</span> <span class="nn">datetime</span><font></font>
+<h5 id="Измерение-времени-работы-кода"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Measuring code runtime </font></font><a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%98%D0%B7%D0%BC%D0%B5%D1%80%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%B8-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B-%D0%BA%D0%BE%D0%B4%D0%B0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¶</font></font></a></h5><div class="highlight"><pre><span class="kn"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">import </font></font></span> <span class="nn"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">time </font></font></span>
+<span class="kn"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">import </font></font></span> <span class="nn"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">datetime</font></font></span><font></font>
 <font></font>
-<span class="n">start_time</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><font></font>
+<span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">start_time </font></font></span> <span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">= </font></font></span> <span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">datetime </font></font></span><span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font></font></span><span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">datetime </font></font></span><span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font></font></span><span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">now </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">()</font></font></span><font></font>
 <font></font>
-<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="c1"># вместо этой строчки разместить замеряемый код</span><font></font>
+<span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">time </font></font></span><span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font></font></span><span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">sleep </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">( </font></font></span><span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">) </font></font></span> <span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># place the measured code instead of this line</font></font></span><font></font>
 <font></font>
-<span class="k">print</span> <span class="s1">'Time elapsed:'</span><span class="p">,</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span> <span class="o">-</span> <span class="n">start_time</span>
+<span class="k"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">print </font></font></span> <span class="s1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">'Time elapsed:' </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span> <span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">datetime </font></font></span><span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font></font></span><span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">datetime </font></font></span><span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font></font></span><span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">now </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">() </font></font></span> <span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">- </font></font></span> <span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">start_time</font></font></span>
 </pre></div>
 
 </div>
@@ -858,31 +858,31 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Подход-2:-логистическая-регрессия">Подход 2: логистическая регрессия<a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%9F%D0%BE%D0%B4%D1%85%D0%BE%D0%B4-2:-%D0%BB%D0%BE%D0%B3%D0%B8%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D1%80%D0%B5%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D1%8F">¶</a></h3><p>Линейные методы работают гораздо быстрее композиций деревьев, поэтому кажется разумным воспользоваться именно ими для ускорения анализа данных. Одним из наиболее распространенных методов для классификации является логистическая регрессия.</p>
-<p><strong>Важно:</strong> не забывайте, что линейные алгоритмы чувствительны к масштабу признаков! Может пригодиться sklearn.preprocessing.StandartScaler.</p>
+<h3 id="Подход-2:-логистическая-регрессия"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Approach 2: Logistic Regression </font></font><a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%9F%D0%BE%D0%B4%D1%85%D0%BE%D0%B4-2:-%D0%BB%D0%BE%D0%B3%D0%B8%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F-%D1%80%D0%B5%D0%B3%D1%80%D0%B5%D1%81%D1%81%D0%B8%D1%8F"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¶</font></font></a></h3><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Linear methods work much faster than tree compositions, so it seems reasonable to use them to speed up data analysis. </font><font style="vertical-align: inherit;">One of the most common methods for classification is logistic regression.</font></font></p>
+<p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Important:</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> do not forget that linear algorithms are sensitive to the scale of features! </font><font style="vertical-align: inherit;">Sklearn.preprocessing.StandartScaler may come in handy.</font></font></p>
 <ol>
-<li>Оцените качество логистической регрессии (sklearn.linear_model.LogisticRegression с L2-регуляризацией) с помощью кросс-валидации по той же схеме, которая использовалась для градиентного бустинга. Подберите при этом лучший параметр регуляризации (C). Какое наилучшее качество у вас получилось? Как оно соотносится с качеством градиентного бустинга? Чем вы можете объяснить эту разницу? Быстрее ли работает логистическая регрессия по сравнению с градиентным бустингом?</li>
-<li>Среди признаков в выборке есть категориальные, которые мы использовали как числовые, что вряд ли является хорошей идеей. Категориальных признаков в этой задаче одиннадцать: lobby_type и r1_hero, r2_hero, ..., r5_hero, d1_hero, d2_hero, ..., d5_hero. Уберите их из выборки, и проведите кросс-валидацию для логистической регрессии на новой выборке с подбором лучшего параметра регуляризации. Изменилось ли качество? Чем вы можете это объяснить?</li>
-<li>На предыдущем шаге мы исключили из выборки признаки rM_hero и dM_hero, которые показывают, какие именно герои играли за каждую команду. Это важные признаки — герои имеют разные характеристики, и некоторые из них выигрывают чаще, чем другие. Выясните из данных, сколько различных идентификаторов героев существует в данной игре (вам может пригодиться фукнция unique или value_counts).</li>
-<li>Воспользуемся подходом "мешок слов" для кодирования информации о героях. Пусть всего в игре имеет N различных героев. Сформируем N признаков, при этом i-й будет равен нулю, если i-й герой не участвовал в матче; единице, если i-й герой играл за команду Radiant; минус единице, если i-й герой играл за команду Dire. Ниже вы можете найти код, который выполняет данной преобразование. Добавьте полученные признаки к числовым, которые вы использовали во втором пункте данного этапа.</li>
-<li>Проведите кросс-валидацию для логистической регрессии на новой выборке с подбором лучшего параметра регуляризации. Какое получилось качество? Улучшилось ли оно? Чем вы можете это объяснить?</li>
-<li>Постройте предсказания вероятностей победы команды Radiant для тестовой выборки с помощью лучшей из изученных моделей (лучшей с точки зрения AUC-ROC на кросс-валидации). Убедитесь, что предсказанные вероятности адекватные — находятся на отрезке [0, 1], не совпадают между собой (т.е. что модель не получилась константной).</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Evaluate the quality of logistic regression (sklearn.linear_model.LogisticRegression with L2 regularization) using cross-validation according to the same scheme used for gradient boosting. </font><font style="vertical-align: inherit;">Choose the best regularization parameter (C). </font><font style="vertical-align: inherit;">What is the best quality you have? </font><font style="vertical-align: inherit;">How does it compare with the quality of gradient boosting? </font><font style="vertical-align: inherit;">How can you explain this difference? </font><font style="vertical-align: inherit;">Is logistic regression faster than gradient boosting?</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Among the signs in the sample there are categorical ones that we used as numeric, which is hardly a good idea. </font><font style="vertical-align: inherit;">There are eleven categorical attributes in this task: lobby_type and r1_hero, r2_hero, ..., r5_hero, d1_hero, d2_hero, ..., d5_hero. </font><font style="vertical-align: inherit;">Remove them from the sample, and cross-validate for logistic regression on the new sample with the selection of the best regularization parameter. </font><font style="vertical-align: inherit;">Has the quality changed? </font><font style="vertical-align: inherit;">How can you explain this?</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">In the previous step, we excluded the rM_hero and dM_hero attributes from the sample, which show which heroes played for each team. </font><font style="vertical-align: inherit;">These are important signs - heroes have different characteristics, and some of them win more often than others. </font><font style="vertical-align: inherit;">Find out from the data how many different identifiers of heroes exist in this game (the unique or value_counts function may be useful to you).</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">We use the “bag of words” approach to encode information about the characters. </font><font style="vertical-align: inherit;">Let the whole game has N different heroes. </font><font style="vertical-align: inherit;">We will form N signs, in this case the i-th will be equal to zero if the i-th hero did not participate in the match; </font><font style="vertical-align: inherit;">1 if the i-th hero played for the Radiant team; </font><font style="vertical-align: inherit;">minus one if the i-th hero played for the Dire team. </font><font style="vertical-align: inherit;">Below you can find the code that performs this conversion. </font><font style="vertical-align: inherit;">Add the obtained characteristics to the numeric ones that you used in the second paragraph of this stage.</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Perform cross-validation for logistic regression on a new sample with the selection of the best regularization parameter. </font><font style="vertical-align: inherit;">What quality did you get? </font><font style="vertical-align: inherit;">Has it improved? </font><font style="vertical-align: inherit;">How can you explain this?</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Build predictions of the odds of winning the Radiant team for the test sample using the best of the models studied (best in terms of AUC-ROC in cross-validation). </font><font style="vertical-align: inherit;">Make sure that the predicted probabilities are adequate - they are on the interval [0, 1], do not coincide (ie that the model did not turn out to be constant).</font></font></li>
 </ol>
-<h5 id="Что-указать-в-отчете">Что указать в отчете<a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%A7%D1%82%D0%BE-%D1%83%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C-%D0%B2-%D0%BE%D1%82%D1%87%D0%B5%D1%82%D0%B5">¶</a></h5><p>В отчете по данному этапу вы должны ответить на следующие вопросы:</p>
+<h5 id="Что-указать-в-отчете"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">What to indicate in the report </font></font><a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%A7%D1%82%D0%BE-%D1%83%D0%BA%D0%B0%D0%B7%D0%B0%D1%82%D1%8C-%D0%B2-%D0%BE%D1%82%D1%87%D0%B5%D1%82%D0%B5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¶</font></font></a></h5><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">In the report for this stage, you should answer the following questions:</font></font></p>
 <ol>
-<li>Какое качество получилось у логистической регрессии над всеми исходными признаками? Как оно соотносится с качеством градиентного бустинга? Чем вы можете объяснить эту разницу? Быстрее ли работает логистическая регрессия по сравнению с градиентным бустингом?</li>
-<li>Как влияет на качество логистической регрессии удаление категориальных признаков (укажите новое значение метрики качества)? Чем вы можете объяснить это изменение?</li>
-<li>Сколько различных идентификаторов героев существует в данной игре?</li>
-<li>Какое получилось качество при добавлении "мешка слов" по героям? Улучшилось ли оно по сравнению с предыдущим вариантом? Чем вы можете это объяснить?</li>
-<li>Какое минимальное и максимальное значение прогноза на тестовой выборке получилось у лучшего из алгоритмов?</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">What is the quality of the logistic regression over all the initial features? </font><font style="vertical-align: inherit;">How does it compare with the quality of gradient boosting? </font><font style="vertical-align: inherit;">How can you explain this difference? </font><font style="vertical-align: inherit;">Is logistic regression faster than gradient boosting?</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">How does the removal of categorical features affect the quality of logistic regression (specify a new value for the quality metric)? </font><font style="vertical-align: inherit;">How can you explain this change?</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">How many different hero identifiers are there in this game?</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">What was the quality when adding a "bag of words" for the characters? </font><font style="vertical-align: inherit;">Has it improved over the previous version? </font><font style="vertical-align: inherit;">How can you explain this?</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">What is the minimum and maximum value of the forecast on the test set for the best of the algorithms?</font></font></li>
 </ol>
-<h5 id="Код-для-формирования-&quot;мешка-слов&quot;-по-героям">Код для формирования "мешка слов" по героям<a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%9A%D0%BE%D0%B4-%D0%B4%D0%BB%D1%8F-%D1%84%D0%BE%D1%80%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%22%D0%BC%D0%B5%D1%88%D0%BA%D0%B0-%D1%81%D0%BB%D0%BE%D0%B2%22-%D0%BF%D0%BE-%D0%B3%D0%B5%D1%80%D0%BE%D1%8F%D0%BC">¶</a></h5><div class="highlight"><pre><span class="c1"># N — количество различных героев в выборке</span>
-<span class="n">X_pick</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">N</span><span class="p">))</span><font></font>
+<h5 id="Код-для-формирования-&quot;мешка-слов&quot;-по-героям"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Code for forming a "bag of words" for the heroes </font></font><a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%9A%D0%BE%D0%B4-%D0%B4%D0%BB%D1%8F-%D1%84%D0%BE%D1%80%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F-%22%D0%BC%D0%B5%D1%88%D0%BA%D0%B0-%D1%81%D0%BB%D0%BE%D0%B2%22-%D0%BF%D0%BE-%D0%B3%D0%B5%D1%80%D0%BE%D1%8F%D0%BC"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¶</font></font></a></h5><div class="highlight"><pre><span class="c1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"># N - the number of different heroes in the sample </font></font></span>
+<span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">X_pick </font></font></span> <span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">= </font></font></span> <span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">np </font></font></span><span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font></font></span><span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">zeros </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(( </font></font></span><span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">data </font></font></span><span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font></font></span><span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">shape </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[ </font></font></span><span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">], </font></font></span> <span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">N </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">))</font></font></span><font></font>
 <font></font>
-<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">match_id</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">index</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="nb">xrange</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
-        <span class="n">X_pick</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">data</span><span class="o">.</span><span class="n">ix</span><span class="p">[</span><span class="n">match_id</span><span class="p">,</span> <span class="s1">'r</span><span class="si">%d</span><span class="s1">_hero'</span> <span class="o">%</span> <span class="p">(</span><span class="n">p</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
-        <span class="n">X_pick</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">data</span><span class="o">.</span><span class="n">ix</span><span class="p">[</span><span class="n">match_id</span><span class="p">,</span> <span class="s1">'d</span><span class="si">%d</span><span class="s1">_hero'</span> <span class="o">%</span> <span class="p">(</span><span class="n">p</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+<span class="k"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">for </font></font></span> <span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">i </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span> <span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">match_id </font></font></span> <span class="ow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">in </font></font></span> <span class="nb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">enumerate </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">( </font></font></span><span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">data </font></font></span><span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font></font></span><span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">index </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">): </font></font></span>
+    <span class="k"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">for </font></font></span> <span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">p </font></font></span> <span class="ow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">in </font></font></span> <span class="nb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">xrange </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">( </font></font></span><span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">): </font></font></span>
+        <span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">X_pick </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[ </font></font></span><span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">i </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span> <span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">data </font></font></span><span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font></font></span><span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ix </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[ </font></font></span><span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">match_id </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span> <span class="s1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">'r </font></font></span><span class="si"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">% d </font></font></span><span class="s1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">_hero' </font></font></span> <span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">% </font></font></span> <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">( </font></font></span><span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">p </font></font></span><span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">+ </font></font></span><span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">)] </font></font></span><span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">- </font></font></span><span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">] </font></font></span> <span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">= </font></font></span> <span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1 </font></font></span>
+        <span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">X_pick </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[ </font></font></span><span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">i </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span> <span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">data </font></font></span><span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font></font></span><span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ix </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">[ </font></font></span><span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">match_id </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font></span> <span class="s1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">'d </font></font></span><span class="si"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">% d </font></font></span><span class="s1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">_hero'</font></font></span> <span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">% </font></font></span> <span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">( </font></font></span><span class="n"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">p </font></font></span><span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">+ </font></font></span><span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">)] </font></font></span><span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">- </font></font></span><span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1 </font></font></span><span class="p"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">] </font></font></span> <span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">= </font></font></span> <span class="o"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">- </font></font></span><span class="mi"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></span>
 </pre></div>
 
 </div>
@@ -893,16 +893,16 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Проверка-финальной-модели">Проверка финальной модели<a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%9F%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D1%84%D0%B8%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9-%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8">¶</a></h2><p>После того как вы провели все эксперименты и выбрали лучшую модель, можете проверить ее качество на тестовых матчах. Выборка тестовых матчей собрана в файле <code>matches_test.jsonlines.bz2</code>. В отличие от основного набора матчей, в тестовых матчах есть только та информация, которая известна на момент первых 5 игровых минут, результат матча — неизвестен. Таблица признаков для тестовых матчей — <code>features_test.csv</code>.</p>
-<p>Для всех матчей из тестового набора предскажите вероятность победы Radiant, запишите предсказания в CSV файл с колонками <code>match_id</code> (идентификатор матча) и <code>radiant_win</code> — предсказанная вероятность. Файл с предсказаниями должен выглядеть примерно следующим образом:</p>
+<h2 id="Проверка-финальной-модели"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Checking the final model </font></font><a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%9F%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%BA%D0%B0-%D1%84%D0%B8%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9-%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D0%B8"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¶</font></font></a></h2><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">After you have completed all the experiments and selected the best model, you can check its quality in test matches. </font><font style="vertical-align: inherit;">A selection of test matches is collected in a file </font></font><code>matches_test.jsonlines.bz2</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">. </font><font style="vertical-align: inherit;">Unlike the main set of matches, in test matches there is only the information that was known at the time of the first 5 game minutes, the result of the match is unknown. </font><font style="vertical-align: inherit;">Feature table for test matches </font></font><code>features_test.csv</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">For all matches from the test set, predict the probability of Radiant winning, write the predictions in a CSV file with columns </font></font><code>match_id</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(match identifier) ​​and </font></font><code>radiant_win</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">- the predicted probability. </font><font style="vertical-align: inherit;">The prediction file should look something like this:</font></font></p>
 
 <pre><code>match_id,radiant_win<font></font>
 1,0.51997370502<font></font>
 4,0.51997370502<font></font>
 15,0.51997370502<font></font>
 ...</code></pre>
-<p>Отправьте решение на Kaggle в соревнование: Dota 2: Win Probability Prediction.</p>
-<p>Ссылка на соревнование: <a href="https://kaggle.com/join/coursera_ml_dota2_contest">Dota 2: Win Probability Prediction</a></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Send your decision to Kaggle in the competition: Dota 2: Win Probability Prediction.</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Competition Link: </font></font><a href="https://kaggle.com/join/coursera_ml_dota2_contest"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dota 2: Win Probability Prediction</font></font></a></p>
 
 </div>
 </div>
@@ -912,12 +912,12 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Что-еще-попробовать?">Что еще попробовать?<a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%A7%D1%82%D0%BE-%D0%B5%D1%89%D0%B5-%D0%BF%D0%BE%D0%BF%D1%80%D0%BE%D0%B1%D0%BE%D0%B2%D0%B0%D1%82%D1%8C?">¶</a></h3><p>Разумеется, можно попробовать еще очень много разных идей, которые помогут вам получить еще более высокий результат на kaggle. Вот лишь несколько возможных вариантов:</p>
+<h3 id="Что-еще-попробовать?"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">What else to try? </font></font><a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%A7%D1%82%D0%BE-%D0%B5%D1%89%D0%B5-%D0%BF%D0%BE%D0%BF%D1%80%D0%BE%D0%B1%D0%BE%D0%B2%D0%B0%D1%82%D1%8C?"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¶</font></font></a></h3><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Of course, you can try many more different ideas that will help you get even better results on kaggle. </font><font style="vertical-align: inherit;">Here are just a few of the options:</font></font></p>
 <ol>
-<li>Про каждого из игроков есть достаточно много показателей: максимальный опыт, число смертей и т.д. (см. список выше). Можно попробовать просуммировать или усредних их, получив агрегированные показатели для всей команды.</li>
-<li>В сырых данных (файл matches.jsonlines.bz2) содержится очень много информации, которую мы пока не использовали. Вы можете, например, составить "мешки слов" для покупок различных предметов (то есть кодировать информацию о том, сколько раз каждая команда покупала тот или иной предмет). Обратите внимание, что при этом вы можете получить слишком большое количество признаков, для которых может иметь смысл сделать понижение размерности с помощью метода главных компонент.</li>
-<li>Можно сформировать признаки про изменения способностей героев в течение матча (ability_upgrades).</li>
-<li>В этом задании используются только градиентный бустинг и логистическая регрессия — но ведь мы изучали и другие модели! Можно попробовать метод k ближайших соседей, SVM, случайный лес и так далее.</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">There are a lot of indicators about each player: maximum experience, number of deaths, etc. </font><font style="vertical-align: inherit;">(see list above). </font><font style="vertical-align: inherit;">You can try to sum or average them, getting aggregated indicators for the whole team.</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The raw data (matches.jsonlines.bz2 file) contains a lot of information that we have not yet used. </font><font style="vertical-align: inherit;">You can, for example, create “bags of words” for purchases of various items (that is, encode information about how many times each team has bought one or another item). </font><font style="vertical-align: inherit;">Please note that in this case you can get too many features for which it may make sense to lower the dimension using the principal component method.</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">You can form signs about changes in the abilities of the heroes during the match (ability_upgrades).</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">In this task, only gradient boosting and logistic regression are used - but we also studied other models! </font><font style="vertical-align: inherit;">You can try the k nearest neighbors method, SVM, random forest, and so on.</font></font></li>
 </ol>
 
 </div>
@@ -928,31 +928,31 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Про-задачу-и-финальное-задание">Про задачу и финальное задание<a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%9F%D1%80%D0%BE-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D1%83-%D0%B8-%D1%84%D0%B8%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5-%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5">¶</a></h2><h4 id="Почему-именно-такая-задача?">Почему именно такая задача?<a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%9F%D0%BE%D1%87%D0%B5%D0%BC%D1%83-%D0%B8%D0%BC%D0%B5%D0%BD%D0%BD%D0%BE-%D1%82%D0%B0%D0%BA%D0%B0%D1%8F-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0?">¶</a></h4><ul>
-<li>Публикация реальных данных из индустриальных задач — очень смелый шаг для компании. Мало кто (даже Яндекс) может на такое пойти. Гораздо проще (а порой и интереснее) воспользоваться данными из открытых источников.</li>
-<li>Публичные датасеты из интернета для решения реальных бизнес-задач мало пригодны, собственно поэтому они и лежат в открытом доступе.</li>
-<li>Мы предпочли сделать игрушечную задачу на реальных данных, вместо реальной задачи на игрушечных данных.</li>
-<li>Задача прогнозирования победы — игрушечная, но вот лишь небольшой перечень реальных задач, на которые она похожа:<ul>
-<li>предсказания вероятности покупки услуги клиентом банка</li>
-<li>предсказание вероятности оттока клиента к другому поставщику услуг</li>
-<li>... (подумайте над другими примерами)</li>
+<h2 id="Про-задачу-и-финальное-задание"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">About the task and the final task </font></font><a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%9F%D1%80%D0%BE-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D1%83-%D0%B8-%D1%84%D0%B8%D0%BD%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5-%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¶</font></font></a></h2><h4 id="Почему-именно-такая-задача?"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Why such a task? </font></font><a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%9F%D0%BE%D1%87%D0%B5%D0%BC%D1%83-%D0%B8%D0%BC%D0%B5%D0%BD%D0%BD%D0%BE-%D1%82%D0%B0%D0%BA%D0%B0%D1%8F-%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0?"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¶</font></font></a></h4><ul>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Publication of real data from industrial tasks is a very bold step for the company. </font><font style="vertical-align: inherit;">Few people (even Yandex) can do this. </font><font style="vertical-align: inherit;">It is much easier (and sometimes more interesting) to use data from open sources.</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Public datasets from the Internet are not very suitable for solving real business problems, which is why they are in the public domain.</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">We preferred to make a toy task on real data, instead of a real task on toy data.</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The task of predicting victory is a toy, but here is just a small list of real tasks that it looks like:</font></font><ul>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">predictions of the probability of purchasing a service by a bank</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">predicting the likelihood of a customer churn to another service provider</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">... (think of other examples)</font></font></li>
 </ul>
 </li>
 </ul>
-<h4 id="Задание-слишком-простое.-Что-еще-можно-сделать?">Задание слишком простое. Что еще можно сделать?<a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81%D0%BB%D0%B8%D1%88%D0%BA%D0%BE%D0%BC-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B5.-%D0%A7%D1%82%D0%BE-%D0%B5%D1%89%D0%B5-%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE-%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C?">¶</a></h4><p>Ответить на вопрос: какое минимальное число минут матча необходимо знать, для того чтобы в 80% матчей верно угадывать победившую сторону? А с точностью 90%? Дайте свой ответ на этот вопрос и докажите что такой точности действительно можно достичь, построив модель и качественно провалидировав ее. Насколько матчи в игре Dota 2 предсказуемы?</p>
-<p>Напишите об этом статью, расскажите всем, и приходите к нам на собеседование.</p>
-<h4 id="Где-взяли-данные?">Где взяли данные?<a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%93%D0%B4%D0%B5-%D0%B2%D0%B7%D1%8F%D0%BB%D0%B8-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5?">¶</a></h4><p>Набор данных был сделан на основе выгрузки <a href="http://academictorrents.com/details/5c5deeb6cfe1c944044367d2e7465fd8bd2f4acf">YASP 3.5 Million Data Dump</a> реплеев матчей Dota 2 с сайта <a href="http://yasp.co/">yasp.co</a>. За выгрузку огромное спасибо Albert Cui and Howard Chung and Nicholas Hanson-Holtry. Лицензия на выгрузку: CC BY-SA 4.0.</p>
-<h4 id="Как-сформировали-выборку?">Как сформировали выборку?<a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%9A%D0%B0%D0%BA-%D1%81%D1%84%D0%BE%D1%80%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BB%D0%B8-%D0%B2%D1%8B%D0%B1%D0%BE%D1%80%D0%BA%D1%83?">¶</a></h4><p>Оригинальная выгрузка матчей была очищена, в предложенном наборе присутствуют матчи:</p>
+<h4 id="Задание-слишком-простое.-Что-еще-можно-сделать?"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The task is too simple. </font><font style="vertical-align: inherit;">What else can be done? </font></font><a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D1%81%D0%BB%D0%B8%D1%88%D0%BA%D0%BE%D0%BC-%D0%BF%D1%80%D0%BE%D1%81%D1%82%D0%BE%D0%B5.-%D0%A7%D1%82%D0%BE-%D0%B5%D1%89%D0%B5-%D0%BC%D0%BE%D0%B6%D0%BD%D0%BE-%D1%81%D0%B4%D0%B5%D0%BB%D0%B0%D1%82%D1%8C?"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¶</font></font></a></h4><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Answer the question: what is the minimum number of minutes of a match you need to know in order to correctly predict the winning side in 80% of matches? </font><font style="vertical-align: inherit;">And with an accuracy of 90%? </font><font style="vertical-align: inherit;">Give your answer to this question and prove that such accuracy can really be achieved by building a model and qualitatively validating it. </font><font style="vertical-align: inherit;">How predictable are matches in Dota 2?</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Write an article about this, tell everyone, and come to us for an interview.</font></font></p>
+<h4 id="Где-взяли-данные?"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Where did you get the data? </font></font><a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%93%D0%B4%D0%B5-%D0%B2%D0%B7%D1%8F%D0%BB%D0%B8-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5?"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¶</font></font></a></h4><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The data set was made on the basis of the discharge </font></font><a href="http://academictorrents.com/details/5c5deeb6cfe1c944044367d2e7465fd8bd2f4acf"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">YASP 3.5 Million Data Dump</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> replays games Dota 2 site </font></font><a href="http://yasp.co/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">yasp.co</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> . </font><font style="vertical-align: inherit;">Thank you so much for unloading Albert Cui and Howard Chung and Nicholas Hanson-Holtry. </font><font style="vertical-align: inherit;">Download License: CC BY-SA 4.0.</font></font></p>
+<h4 id="Как-сформировали-выборку?"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">How was the sample formed? </font></font><a class="anchor-link" href="file:///Users/dmakhotin/Downloads/yandex_ml/week7/final-statement.html#%D0%9A%D0%B0%D0%BA-%D1%81%D1%84%D0%BE%D1%80%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BB%D0%B8-%D0%B2%D1%8B%D0%B1%D0%BE%D1%80%D0%BA%D1%83?"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¶</font></font></a></h4><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The original unloading of matches was cleared, in the proposed set there are matches:</font></font></p>
 <ul>
-<li>сыгранные с 2015-05-01 до 2015-12-17</li>
-<li>длительностью не менее 15 минут</li>
-<li>убраны матчи с неполной информацией (например: отсутвует информация про игроков)</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">played from 2015-05-01 to 2015-12-17</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">no less than 15 minutes</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Matches with incomplete information removed (for example: there is no information about the players)</font></font></li>
 </ul>
-<p>Из всего датасета 15% случайных записей были выделены в тестовое множество.</p>
-<p>Для того чтобы размотивировать участников соревнования на Kaggle занимать высокие места читерскими методами (например, скачав оригинальный набор данных и подсмотрев ответы на тестовом множестве матчей), мы произвели минимальную обфускацию данных, т.е. немного запутали датасет:</p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Of the entire dataset, 15% of random records were allocated to the test set.</font></font></p>
+<p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">In order to motivate competitors on Kaggle to occupy high places by cheating methods (for example, by downloading the original data set and looking at the answers on the test set of matches), we performed minimal data obfuscation, i.e. </font><font style="vertical-align: inherit;">confused the dataset a bit:</font></font></p>
 <ul>
-<li>поменяли идентификаторы матчей</li>
-<li>время начала каждого матча сдвинули на значение случайной величины, нормально распределенной со стандартным отклонением в 1 сутки</li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">changed match identifiers</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">the start time of each match was shifted by the value of a random variable normally distributed with a standard deviation of 1 day</font></font></li>
 </ul>
 
 </div>
